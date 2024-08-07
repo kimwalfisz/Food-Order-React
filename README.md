@@ -1,4 +1,4 @@
-* Food Order app
+# Food Order app 
   this app allows to add items to the cart and post an order to the dummy orders file!
   instructions:
   To launch the app:
