@@ -32,8 +32,8 @@ app.post('/orders', async (req, res) => {
   if (
     orderData.customer.email === null ||
     !orderData.customer.email.includes('@') ||
-    orderData.customer.name === null ||
-    orderData.customer.name.trim() === '' ||
+    orderData.customer.fullName === null ||
+    orderData.customer.fullName.trim() === '' ||
     orderData.customer.street === null ||
     orderData.customer.street.trim() === '' ||
     orderData.customer['postal-code'] === null ||
@@ -66,4 +66,6 @@ app.use((req, res) => {
   res.status(404).json({ message: 'Not found' });
 });
 
-app.listen(3000);
+app.listen(3000, () => {
+  console.log('App running on port 3000...');
+});

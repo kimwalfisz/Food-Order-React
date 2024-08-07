@@ -13,6 +13,7 @@ export async function postOrder(orderData) {
       });
     const resData = await response.json();
     if (!response.ok) {
+        console.log(response);
         throw new Error(resData.message);
     }
     else return resData;

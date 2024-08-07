@@ -6,9 +6,12 @@ export default function Modal({children, open, className='', onClose}) {
 
     useEffect(() => {
         if (open) {
+          console.log("model opened!", open);
             dialogRef.current.showModal();
         }
-        return () => dialogRef.current.close();
+        return () => {
+          dialogRef.current.close();
+        }
     }, [open]);
 
   return createPortal(
