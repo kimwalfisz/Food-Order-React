@@ -1,7 +1,8 @@
 # Food Order app 
-  this app allows to add items to the cart and post an order to the dummy orders file!
-  instructions:
-  To launch the app:
+this app allows to add items to the cart and post an order to the dummy orders file!
+
+  
+instructions To launch the app:
 
 - download the zip or clone the repository to your machine
 - run command 'npm install' in the root directory in your terminal
